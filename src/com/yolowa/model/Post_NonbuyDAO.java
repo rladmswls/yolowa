@@ -13,6 +13,7 @@ public class Post_NonbuyDAO {
 	ResultSet rs;
 	int count;
 	
+	//post랑 nonbuy join 해서 보기 -> 방 선택해서 들어가면 보일수 있게
 	public Post_NonbuyDTO selectPost_Nonbuy(int p_num){
 		Post_NonbuyDTO post_nonbuy_dto = null;
 		String sql = "select * from post join nonbuy using (bigcat, smallcat) where p_num = " + p_num;

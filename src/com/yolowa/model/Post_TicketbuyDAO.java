@@ -14,6 +14,7 @@ public class Post_TicketbuyDAO {
 	ResultSet rs;
 	int count;
 	
+	//post 랑 ticketbuy join 해서 보기 -> 방 선택해서 들어가면 보일수 있게
 	public Post_TicketbuyDTO selectPost_Ticketbuy(int p_num){
 		Post_TicketbuyDTO post_ticketbuy_dto = null;
 		

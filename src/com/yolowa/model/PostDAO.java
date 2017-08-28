@@ -38,7 +38,7 @@ public class PostDAO {
 		return string_list;
 	}// 포스트 제목만 보기
 
-	// 포스트 전체보기
+	// 포스트 전체보기 -> 방 선택 전에 리스트만 보이게 
 	public List<PostDTO> selectAllPost() {
 		List<PostDTO> post_list = new ArrayList<>();
 		String sql = "select * from post order by p_date ";
@@ -60,6 +60,8 @@ public class PostDAO {
 		return post_list;
 	}// 포스트 전체보기
 
+	
+	
 	// postDTO 만들기
 	public PostDTO makePostDTO(ResultSet rs2) throws SQLException {
 		int p_num = rs2.getInt(1);
